@@ -22,7 +22,7 @@ The appearance of the lumen is parameterized within the Substance Designer graph
 # Training a neural network
 For this project, I randomly generated roughly 8000 images of lumens with and without lesions. The lesions were further randomly assigned a size, color, and height. The benefit of this approach is that the pipeline knows a priori the label of the image and therefore the time-consuming process of hand-labeling is avoided!
 
-![alt text](https://github.com/madhi-saranadasa/Deep-Learning-With-Synthetic-Data/blob/main/images/Picture2.png "Training a neural network 1")
+![alt text](https://github.com/madhi-saranadasa/Deep-Learning-With-Synthetic-Data/blob/main/images/Picture3.png "Training a neural network 1")
 
 Next, I developed a convolutional neural network using PyTorch to classify normal vs. lesion images. The architecture is a fairly simply implementation containing 3 convolutional layers with a 2x2 pixel kernel, followed by a dense layer with 512 nodes, and an output layer with 2 nodes (for each prediction class: normal vs. lesion). As shown below, after 3 epochs of training with a batch size of 100, the neural network was highly accurate in the hold-out validation set.
 
